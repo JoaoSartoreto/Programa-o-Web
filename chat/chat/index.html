@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Bate-Papo da Turma de Programação para Web</title>
+    </head>
+    <body>
+        <!-- IMPLEMENTE SEU CÓDIGO HTML AQUI!!!! -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+        <script src="scripts/auxiliar.js"></script>
+        <script src="scripts/chat.js"></script>
+        <div class="container">
+            <div class="row chat">
+                <div class="col-3 barra-contatos">
+                    <div class="perfil">
+                        <div class="perfil-info" id="perfil-info">
+                            <img src="icons/profile-icon.png" alt="Imagem de perfil">
+                            <p>Nome do usuário</p>
+                        </div>
+                    </div>
+                    <div class="contatos">
+                        <div class="contatos-grupo" id="contatos-grupo">
+                            <button class="contato">
+                                <img src="icons/group-profile.png" alt="Imagem de perfil">
+                                <p>Grupo</p>
+                            </button>
+                        </div>
+                        <div class="contatos-info" id="contatos-info"></div>
+                    </div>
+                </div>
+                <div class="col-9 conversa">
+                    <div class="conversa-header" id="conversa-header">
+                        <img src="icons/group-profile.png" alt="Imagem de perfil">
+                        <p>Grupo</p>
+                    </div>
+                    <div class="row conversa-mensagem">
+                        <div class="conversa-info" id="convesa-info"></div>
+                        <div class="areaEnvio">
+                            <textarea
+                                name="tArea"
+                                id="idText"
+                                class="txtArea"
+                                cols="100"
+                                rows="4"
+                            ></textarea>
+                            <button
+                                id="idEnviarMensagem"
+                                class="enviar"
+                                disabled
+                                onclick="saveMessage()"
+                            >Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row logar">
+                <div class="col-4">
+                    <p class="tituloEntre">Entre com Google</p>
+                    <button
+                        id="idEntrar"
+                        type="submit"
+                        class="btn btn-dark mb-2"
+                        onclick="signIn()"
+                    >Entrar com o google</button>
+                    <button
+                        id="idSair"
+                        class="btn btn-dark mb-2"
+                        disabled
+                        onclick="signOut()"
+                    >Sair</button>
+                </div>
+                <div class="col-4 text-center corArea" id="idCorArea">
+                    <p class="corMsg">Escolha uma cor para sua mensagem</p>
+                    <input type="color" class="corMensagem" value="#000000" id="corMensagem">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>

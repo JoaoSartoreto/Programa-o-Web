@@ -1,0 +1,160 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightblue;
+}
+
+.chat{
+    height: 80vh;
+    border-style: solid;
+}
+
+.barra-contatos{
+    background-color: rgb(14, 44, 70);
+    height: 100%;
+    border-style: solid;
+}
+
+.perfil{
+    margin-top: 5px;
+    height: 15%;
+    width: 100%;
+    background-color: rgb(223, 235, 245);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.perfil-info{
+    display: inline-flex;
+}
+
+.perfil-info img{
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.contatos{
+    margin-top: 7px;
+    height: 82%;
+    background-color: antiquewhite;
+}
+
+.contatos-info{
+    overflow: auto;
+}
+
+.contato{
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+}
+
+.contato img{
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.contato-grupo img{
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.conversa{
+    background-color: rgb(16, 40, 61);
+    height: 100%;
+}
+
+.conversa-header{
+    margin-top: 5px;
+    height: 15%;
+    width: 100%;
+    background-color: rgb(37, 139, 223);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conversa-header img{
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.conversa-header p{
+    margin-right: auto;
+    font-size: 40px;
+}
+
+.conversa-mensagem{
+    margin-top: 7px;
+    height: 82%;
+    background-color: rgb(236, 220, 198);
+}
+
+.conversa-info{
+    height: 75%;
+    background-color: tan;
+    overflow: auto;
+}
+
+.areaEnvio{
+    margin-top: 3px;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: space-around;
+    justify-content: center;
+}
+
+.enviar{
+    padding: 7px;
+    width: 80px;
+}
+
+.txtArea{
+    resize: none;
+}
+
+
+.logar{
+    height: 15vh;
+    background-color: slategrey;
+    border-style: solid;
+}
+
+.tituloEntre{
+    font-size: 20px;
+}
+
+.corMsg{
+    font-size: 20px;
+}
+
+.corMensagem{
+    border-style: solid;
+    padding: 3px;
+}
+
+.corArea{
+    display: none;
+}
